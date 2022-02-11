@@ -1,0 +1,19 @@
+body{
+    background-image: url("/static/images/vintage-textured-watercolor-paper-background.jpg");
+    background-color: #FFFFDD;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    text-align: justify;
+}
+h1{
+    text-align: center;
+    letter-spacing: 0.5cm;
+}
+h3,h4{
+    font-style: italic;
+}
+h5{
+    text-align: right;
+}
