@@ -13,9 +13,6 @@ h1{
 h3,h4{
     font-style: italic;
 }
-h5{
-    text-align: right;
-}
 .navbar {
     /* position: fixed; */
     /* width: 100%; */
@@ -35,18 +32,18 @@ h5{
 #my-picture {
     border-radius: 2%;
     width: auto;
-    max-height: 40vh;
-    margin: 5mm;
+    max-height: 30vh;
+    margin: 5mm 0 5mm 5mm;
 }
 
 #my-name {
-    margin: 1cm;
+    margin: 5mm;
     font-weight: bold;
 }
 #uni-name {
     text-decoration: none;
-    color: black;
-    padding: 2mm 0mm;  /* setting left right: padding causing weird alignment issue; */
+    color: rgb(17, 81, 110);
+    padding: 2mm 5mm;
 }
 #uni-name:hover {
     background-color: rgba(245, 219, 148, 0.842);
