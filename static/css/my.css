@@ -14,11 +14,12 @@ h3,h4{
     font-style: italic;
 }
 
-/* .navbar {
-    position: fixed;
+.navbar {
+    /* position: fixed;
     width: 100%;
-    transition: top 0.3s;
-} */
+    transition: top 0.3s; */
+    border-radius: 25px;
+}
 
 #main-view {
     display: flex;
@@ -70,14 +71,48 @@ h3,h4{
     justify-content: space-evenly;
     border-radius: 25px;
     background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.308));
+    position: relative;   
+    min-height: 350px;
+    clear: both;
 }
 
-#others h2 {
+#others label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
     padding: 10px;
+    height: 90px;
 }
 
-#others h2:hover {
+#others label:hover {
     background-color: rgba(245, 219, 148, 0.842);
     border-radius: 15px;
+}
+
+.tab [type=radio] {
+    display: none;   
+}
+
+.content {
+    position: absolute;
+    background: rgb(245, 227, 202);
+    min-height: 200px;
+    border-radius: 15px;
+    margin: 0 20px 20px 20px;
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    top: 115px;
+    padding: 3mm 3mm;
+}
+
+[type=radio]:checked ~ label {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 15px;
+    z-index: 2;
+  }
+
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
 }
