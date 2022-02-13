@@ -42,14 +42,14 @@ h3,h4{
     margin: 5mm;
     font-weight: bold;
 }
-.links {
+.links, #my-name > label {
     text-decoration: none;
     color: rgb(17, 81, 110);
     padding: 2mm 5mm;
 }
-.links:hover {
+.links:hover, #my-name > label:hover {
     background-color: rgba(245, 219, 148, 0.842);
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .socials {
@@ -60,7 +60,7 @@ h3,h4{
     margin: 10px;
     padding: 5px;
 }
-.socials > a:hover {
+.socials > a:hover{
     background-color: rgba(245, 219, 148, 0.842);
     border-radius: 5px;
 }
@@ -80,7 +80,7 @@ h3,h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0;
     padding: 10px;
     height: 90px;
 }
@@ -94,6 +94,27 @@ h3,h4{
     display: none;   
 }
 
+[type=radio]:checked ~ label {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 15px;
+    z-index: 2;
+}
+
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
+
+/* 
+[type=checkbox]:checked ~ label {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 15px;
+}
+
+[type=checkbox]:checked ~ label ~ .content {
+    z-index: 1;
+}
+*/
 .content {
     position: absolute;
     background: rgb(245, 227, 202);
@@ -105,14 +126,4 @@ h3,h4{
     bottom: 0; 
     top: 115px;
     padding: 3mm 3mm;
-}
-
-[type=radio]:checked ~ label {
-    background-color: rgba(245, 219, 148, 0.842);
-    border-radius: 15px;
-    z-index: 2;
-  }
-
-[type=radio]:checked ~ label ~ .content {
-    z-index: 1;
 }
