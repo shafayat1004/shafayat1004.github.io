@@ -13,12 +13,13 @@ h1{
 h3,h4{
     font-style: italic;
 }
-.navbar {
-    /* position: fixed; */
-    /* width: 100%; */
-    transition: top 0.3s;
 
-}
+/* .navbar {
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+} */
+
 #main-view {
     display: flex;
     margin: 5mm 0;
@@ -26,7 +27,7 @@ h3,h4{
     align-items: center;
     border-radius: 25px;
     background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.411));
-    /* border: 1px solid green; */
+    text-align: center;
     
 }
 #my-picture {
@@ -40,13 +41,43 @@ h3,h4{
     margin: 5mm;
     font-weight: bold;
 }
-#uni-name {
+.links {
     text-decoration: none;
     color: rgb(17, 81, 110);
     padding: 2mm 5mm;
 }
-#uni-name:hover {
+.links:hover {
     background-color: rgba(245, 219, 148, 0.842);
     border-radius: 10px;
+}
 
+.socials {
+    display: flex;
+    justify-content: center;
+}
+.socials > a {
+    margin: 10px;
+    padding: 5px;
+}
+.socials > a:hover {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 5px;
+}
+
+#others {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.308));
+}
+
+#others h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+#others h2:hover {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 15px;
 }
