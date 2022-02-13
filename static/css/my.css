@@ -2,8 +2,7 @@ body{
     background-image: url("/static/images/vintage-textured-watercolor-paper-background.jpg");
     background-color: #FFFFDD;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin: 1vh 2vh;
     padding-top: 1%;
     text-align: center;
 }
@@ -17,17 +16,40 @@ h3,h4{
 h5{
     text-align: right;
 }
-.myPicture{
-    border-radius: 2%;
-    width: 25%; 
-    min-width: 180px;
+.navbar {
+    /* position: fixed; */
+    /* width: 100%; */
+    transition: top 0.3s;
+
 }
-.short-info{
-    padding-top: 0.5cm;
-    padding-bottom: 0.5cm;
-    margin: auto;
-    border: 3px solid green;
-    width: 50%;
-    /* display: inline-block; */
+#main-view {
     display: flex;
+    margin: 5mm 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.411));
+    /* border: 1px solid green; */
+    
+}
+#my-picture {
+    border-radius: 2%;
+    width: auto;
+    max-height: 40vh;
+    margin: 5mm;
+}
+
+#my-name {
+    margin: 1cm;
+    font-weight: bold;
+}
+#uni-name {
+    text-decoration: none;
+    color: black;
+    padding: 2mm 0mm;  /* setting left right: padding causing weird alignment issue; */
+}
+#uni-name:hover {
+    background-color: rgba(245, 219, 148, 0.842);
+    border-radius: 10px;
+
 }
