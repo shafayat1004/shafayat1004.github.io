@@ -19,6 +19,14 @@ h3,h4{
     width: 100%;
     transition: top 0.3s; */
     border-radius: 25px;
+    background-color: rgba(246, 255, 214, 0.7);
+}
+.navbar-toggler {
+    box-shadow: 3px 3px rgb(168, 125, 67);
+}
+.navbar-toggler:active {
+    box-shadow: none;
+    transform: translate(3px, 3px);   
 }
 
 /* .navbar-collapse {
@@ -91,12 +99,20 @@ h3,h4{
     margin: 8px 8px;
     padding: 10px;
     height: 90px;
+    border-radius: 15px;
+    box-shadow: 5px 5px rgb(168, 125, 67);
+    background-color: rgba(245, 219, 148, 0.842);
+    transition: box-shadow 50ms linear;
+    transition: transform 50ms linear;
+    transition: background-color 100ms ease-in-out;
 }
 
+#others label:active {
+    box-shadow: none;
+    transform: translate(5px, 5px);   
+}
 #others label:hover {
-    background-color: rgba(245, 219, 148, 0.842);
-    border-radius: 15px;
-    
+    background-color: rgba(247, 231, 187, 0.842);
 }
 
 .tab [type=radio] {
@@ -104,11 +120,9 @@ h3,h4{
 }
 
 [type=radio]:checked ~ label {
-    background-color: rgba(245, 219, 148, 0.842);
     border-radius: 15px;
-    /* border: 5px; */
     z-index: 2;
-    box-shadow: 5px 5px rgb(168, 125, 67);
+    /* border: 5px; */
 }
 
 [type=radio]:checked ~ label ~ .content {
