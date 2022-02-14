@@ -107,7 +107,7 @@ h3,h4{
     align-items: center;
     margin: 8px 8px;
     padding: 10px;
-    height: 90px;
+    height: 10vh;
     border-radius: 15px;
     border: 1px rgba(94, 87, 80, 0.555) solid;
     box-shadow: 5px 5px rgb(168, 125, 67);
@@ -117,7 +117,7 @@ h3,h4{
     transition: background-color 100ms ease-in-out;
 }
 
-#others > .tab > label:active {
+#others > .tab > label:active, .hobby-item > label:active {
     box-shadow: none;
     transform: translate(5px, 5px);   
 }
@@ -176,8 +176,26 @@ h3,h4{
     transform: translate(50%, 50%);
 } */
 
+.hobby-item > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 8px;
+    padding: 10px;
+    height: 6vh;
+    border-radius: 15px;
+    border: 1px rgba(94, 87, 80, 0.555) solid;
+    box-shadow: 5px 5px rgb(168, 125, 67);
+    /* background-color: rgba(245, 219, 148, 0.842); */
+    transition: box-shadow 20ms linear;
+    transition: transform 20ms linear;
+    transition: background-color 100ms ease-in-out;
+}
+
 .hobby-item > [type=radio]:checked ~ label  {
+    background-color: rgba(247, 231, 187, 0.842);
     animation: show-off-hobbies 2s ease-in 0s 2 alternate;
+
     display: flex;
 }
 .hobby-item > [type=radio]:checked ~ label ~ .content {
