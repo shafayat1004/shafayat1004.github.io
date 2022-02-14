@@ -22,11 +22,17 @@ h3,h4{
     background-color: rgba(246, 255, 214, 0.7);
 }
 .navbar-toggler {
+    transition: box-shadow 50ms linear;
+    transition: transform 50ms linear;
+    transition: background-color 100ms ease-in-out;
     box-shadow: 3px 3px rgb(168, 125, 67);
 }
-.navbar-toggler:active {
+.navbar-toggler:active, .socials > a:active {
     box-shadow: none;
     transform: translate(3px, 3px);   
+}
+.navbar-toggler:hover {
+    background-color: rgb(246, 255, 214);
 }
 
 /* .navbar-collapse {
@@ -75,10 +81,12 @@ h3,h4{
 .socials > a {
     margin: 10px;
     padding: 5px;
-}
-.socials > a:hover{
+    border: 5px black;
+    border-radius: 6px;
     background-color: rgba(245, 219, 148, 0.842);
-    border-radius: 5px;
+    transition: box-shadow 50ms linear;
+    transition: transform 50ms linear;
+    box-shadow: 3px 3px rgb(168, 125, 67);
 }
 
 #others {
@@ -88,7 +96,7 @@ h3,h4{
     border-radius: 25px;
     background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.308));
     position: relative;   
-    min-height: 350px;
+    min-height: 600px;
     clear: both;
 }
 
@@ -100,10 +108,11 @@ h3,h4{
     padding: 10px;
     height: 90px;
     border-radius: 15px;
+    border: 1px rgba(94, 87, 80, 0.555) solid;
     box-shadow: 5px 5px rgb(168, 125, 67);
-    background-color: rgba(245, 219, 148, 0.842);
-    transition: box-shadow 50ms linear;
-    transition: transform 50ms linear;
+    /* background-color: rgba(245, 219, 148, 0.842); */
+    transition: box-shadow 20ms linear;
+    transition: transform 20ms linear;
     transition: background-color 100ms ease-in-out;
 }
 
@@ -111,7 +120,7 @@ h3,h4{
     box-shadow: none;
     transform: translate(5px, 5px);   
 }
-#others label:hover {
+#others label:hover, .socials > a:hover {
     background-color: rgba(247, 231, 187, 0.842);
 }
 
@@ -120,7 +129,7 @@ h3,h4{
 }
 
 [type=radio]:checked ~ label {
-    border-radius: 15px;
+    background-color: rgba(247, 231, 187, 0.842);
     z-index: 2;
     /* border: 5px; */
 }
@@ -143,7 +152,7 @@ h3,h4{
 .content {
     position: absolute;
     background: rgb(245, 227, 202);
-    min-height: 200px;
+    min-height: 400px;
     border-radius: 15px;
     margin: 0 20px 20px 20px;
     left: 0;
