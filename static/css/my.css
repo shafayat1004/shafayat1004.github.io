@@ -96,6 +96,7 @@ h3,h4{
 #others label:hover {
     background-color: rgba(245, 219, 148, 0.842);
     border-radius: 15px;
+    
 }
 
 .tab [type=radio] {
@@ -105,7 +106,9 @@ h3,h4{
 [type=radio]:checked ~ label {
     background-color: rgba(245, 219, 148, 0.842);
     border-radius: 15px;
+    /* border: 5px; */
     z-index: 2;
+    box-shadow: 5px 5px rgb(168, 125, 67);
 }
 
 [type=radio]:checked ~ label ~ .content {
