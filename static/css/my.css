@@ -100,7 +100,7 @@ h3,h4{
     clear: both;
 }
 
-#others label {
+#others > .tab > label {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,26 +116,22 @@ h3,h4{
     transition: background-color 100ms ease-in-out;
 }
 
-#others label:active {
+#others > .tab > label:active {
     box-shadow: none;
     transform: translate(5px, 5px);   
 }
-#others label:hover, .socials > a:hover {
+#others > .tab > label:hover, .socials > a:hover {
     background-color: rgba(247, 231, 187, 0.842);
 }
 
-.tab [type=radio] {
+[type=radio] {
     display: none;   
 }
 
-[type=radio]:checked ~ label {
+.tab > [type=radio]:checked ~ label {
     background-color: rgba(247, 231, 187, 0.842);
     z-index: 2;
     /* border: 5px; */
-}
-
-[type=radio]:checked ~ label ~ .content {
-    z-index: 1;
 }
 
 
@@ -149,9 +145,12 @@ h3,h4{
     z-index: 1;
 }
 */
-.content {
+.tab > .content {
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
     position: absolute;
-    background: rgb(245, 227, 202);
+    background: rgba(245, 227, 202, 0.288);
     min-height: 400px;
     border-radius: 15px;
     margin: 0 20px 20px 20px;
@@ -160,4 +159,37 @@ h3,h4{
     bottom: 0; 
     top: 115px;
     padding: 3mm 3mm;
+}
+
+.tab > [type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+    display: flex;
+}
+
+.hobby-icon {
+    width: 20%;
+    margin: 15px;
+}
+
+/* .hobby-icon:hover {
+    transform: translate(50%, 50%);
+} */
+
+.hobby-item > [type=radio]:checked ~ label  {
+    animation: show-off-hobbies 5s ease-in-out 0s 1 alternate;
+}
+
+@keyframes show-off-hobbies {
+    0% {
+        transform: translate(50%, 500px);
+        transform: scale(1);
+    }
+    /* 50% {
+        transform: translate(50%, 500px);
+        transform: scale(1);
+    } */
+    100% {
+        transform: translate(50%, 500px);
+        transform: scale(3);
+    }
 }
