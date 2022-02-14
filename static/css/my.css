@@ -108,6 +108,7 @@ h3,h4{
     margin: 8px 8px;
     padding: 10px;
     height: 10vh;
+    max-width: 26vw;
     border-radius: 15px;
     border: 1px rgba(94, 87, 80, 0.555) solid;
     box-shadow: 5px 5px rgb(168, 125, 67);
@@ -182,7 +183,9 @@ h3,h4{
     align-items: center;
     margin: 8px 8px;
     padding: 10px;
-    height: 6vh;
+    max-height: 6vh;
+    width: 3cm;
+    max-width: 16vw;
     border-radius: 15px;
     border: 1px rgba(94, 87, 80, 0.555) solid;
     box-shadow: 5px 5px rgb(168, 125, 67);
@@ -213,7 +216,7 @@ h3,h4{
     left: 0;
     right: 0;
     bottom: 0; 
-    top: 115px;
+    top: 90px;
     padding: 3mm 3mm;
 }
 iframe {
