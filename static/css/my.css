@@ -14,11 +14,19 @@ h3,h4{
     font-style: italic;
 }
 
-.navbar {
+.navbar, .dropdown-menu, .navbar-toggler {
     /* position: fixed;
     width: 100%;
     transition: top 0.3s; */
     border-radius: 25px;
+}
+
+/* .navbar-collapse {
+    object-fit: contain;
+} */
+
+.navbar-text {
+    display: inline-block;
 }
 
 #main-view {
@@ -32,7 +40,7 @@ h3,h4{
     
 }
 #my-picture {
-    border-radius: 2%;
+    border-radius: 15px;
     width: auto;
     max-height: 30vh;
     margin: 5mm 0 5mm 5mm;
@@ -68,7 +76,7 @@ h3,h4{
 #others {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     border-radius: 25px;
     background: linear-gradient(to bottom, rgb(221, 171, 96), rgba(240, 148, 11, 0.308));
     position: relative;   
@@ -80,7 +88,7 @@ h3,h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 0;
+    margin: 8px 8px;
     padding: 10px;
     height: 90px;
 }
