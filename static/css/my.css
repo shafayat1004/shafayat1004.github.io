@@ -5,6 +5,7 @@ body{
     margin: 1vh 2vh;
     padding-top: 1%;
     text-align: center;
+    background-attachment: fixed;
 }
 h1{
     text-align: center;
