@@ -229,7 +229,7 @@ h3, h4 {
   right: 0;
   bottom: 0;
   top: 115px;
-  padding: 3mm 3mm;
+  padding: 3mm 3mm 3mm 3mm;
 }
 
 .main-tabs [type=radio]:checked ~ label {
@@ -259,9 +259,9 @@ h3, h4 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 8px 8px;
-  padding: 10px;
-  max-height: 6vh;
+  margin: 0px 8px 8px 8px;
+  padding: 5px 10px 10px 10px;
+  max-height: 3cm;
   width: 3cm;
   max-width: 16vw;
   border-radius: 15px;
@@ -314,7 +314,7 @@ h3, h4 {
   background: rgba(245, 227, 202, 0.288);
   min-height: auto;
   border-radius: 15px;
-  margin: 0 20px 20px 20px;
+  margin: 90px 20px 20px 20px;
   left: 0;
   right: 0;
   bottom: 0;

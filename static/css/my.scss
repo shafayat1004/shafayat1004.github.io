@@ -162,7 +162,7 @@ h3,h4{
         right: 0;
         bottom: 0; 
         top: 115px;
-        padding: 3mm 3mm;
+        padding: 3mm 3mm 3mm 3mm;
     }
     [type=radio]:checked ~ label {
         background-color: rgba(247, 231, 187, 0.842);
@@ -187,9 +187,10 @@ h3,h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8px 8px;
-    padding: 10px;
-    max-height: 6vh;
+    margin: 0px 8px 8px 8px;
+    padding: 5px 10px 10px 10px;
+    // height: 4cm;
+    max-height: 3cm;
     width: 3cm;
     max-width: 16vw;
     border-radius: 15px;
@@ -219,7 +220,7 @@ h3,h4{
         background: rgba(245, 227, 202, 0.288);
         min-height: auto;
         border-radius: 15px;
-        margin: 0 20px 20px 20px;
+        margin: 90px 20px 20px 20px;
         left: 0;
         right: 0;
         bottom: 0; 
