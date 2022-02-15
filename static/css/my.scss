@@ -167,6 +167,8 @@ h3,h4{
     [type=radio]:checked ~ label {
         background-color: rgba(247, 231, 187, 0.842);
         z-index: 2;
+        box-shadow: none;
+        transform: translate(5px, 5px);  
     }
     [type=radio]:checked ~ label ~ .content {
         z-index: 1;
@@ -205,9 +207,10 @@ h3,h4{
     }
     [type=radio]:checked ~ label  {
         background-color: rgba(247, 231, 187, 0.842);
-        animation: show-off-interests 2s ease-in 0s 2 alternate;
-    
+        // animation: show-off-interests 2s ease-in 0s 2 alternate;
         display: flex;
+        box-shadow: none;
+        transform: translate(5px, 5px);  
     }
     [type=radio]:checked ~ label ~ .content {
         display: flex;
