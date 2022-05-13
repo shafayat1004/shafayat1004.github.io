@@ -1,0 +1,116 @@
+.education-timeline{
+	max-width: 100ch;
+	
+}
+
+ul.timeline-list {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	width: 90vw;
+	flex: 1;
+}
+#education-footer > {
+	img {
+		position: absolute;
+		width: 100%;
+		  height: auto;
+		bottom: -100%;
+		opacity: 0.7;
+		left: 0%;
+		z-index: -1;
+	}
+}
+
+ul.timeline-list:before {
+	position: absolute;
+	content: "";
+	width: var(--border-width);
+	box-shadow: var(--shadows);
+	border-radius: var(--border-radius-s);
+	height: 100%;
+	background-color: var(--nav-bg);
+	left: 50%;
+	top: 0;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+ul.timeline-list {
+	li {
+		position: relative;
+		clear: both;
+		display: table;
+		.timeline_content {
+			width: 45%;
+			color: var(--font-color-default);
+			padding: 30px;
+			float: left;
+			text-align: right;
+		}
+	}
+	li:before {
+		position: absolute;
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-color: var(--marker-color);
+		box-shadow: var(--shadows);
+		left: 50%;
+		top: 50%;
+		-webkit-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+		border-radius: 50%;
+	}
+	li:nth-child(2n) .timeline_content {
+		float: right;
+		text-align: left;
+	}
+}
+.timeline_content{
+	border: var(--border-width) solid var(--nav-bg);
+	box-shadow: var(--shadows), var(--shadows-inner-l);
+	border-radius: var(--border-radius-s);
+	background-color: var(--card-bg);
+
+	h4 {
+		font-size: 22px;
+		font-weight: 600;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	span {
+		font-size: 18px;
+		font-weight: 500;
+		font-family: poppins;
+		color: var(--marker-color);
+	}
+}
+
+@media (max-width: 760px) {
+	ul.timeline-list:before {
+		left: 5%;
+	}
+	ul.timeline-list {
+		li:before {
+			left: 5%;
+		}
+		li .timeline_content {
+			width: 85%;
+			float: right;
+			text-align: left;
+			margin: 1ch 0;
+		}
+		li:nth-child(2n) .timeline_content {
+			text-align: left;
+		}
+	}
+	
+	#education-footer > {
+		img {
+			display: none;
+		}
+	}
+}

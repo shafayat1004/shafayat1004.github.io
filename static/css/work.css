@@ -1,0 +1,18 @@
+.card.work {
+  width: 40rem;
+  background-color: var(--card-bg-5);
+  max-height: 80vh;
+}
+.card.work a {
+  text-decoration: none;
+  box-shadow: var(--shadows-shorter);
+  color: black;
+  background-color: rgb(241, 250, 215);
+  padding: 1ch;
+  margin: 1ch;
+  border-radius: var(--border-radius-s);
+}
+.card.work .card-content {
+  min-height: 12rem;
+  /* height: 80vh; */
+}/*# sourceMappingURL=work.css.map */

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="128"
+   height="128"
+   viewBox="0 0 128 128"
+   sodipodi:docname="hackerrank.svg"
+   inkscape:version="1.1.2 (1:1.1+202202050950+0a00cf5339)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="3.0429188"
+     inkscape:cx="21.36107"
+     inkscape:cy="61.618471"
+     inkscape:window-width="1920"
+     inkscape:window-height="1025"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g8" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g8"
+     transform="translate(-0.44497232,-0.51786981)">
+    <g
+       id="g68342"
+       transform="translate(0.44497232,0.51786981)">
+      <path
+         style="fill:#00e963"
+         d="M 0,64 V 0 h 64 64 v 64 64 H 64 0 Z m 40,16 v -8 h 4 4 v 8 8 h 8 8 V 64 40 h -8 -8 v 8 8 h -4 -4 v -8 -8 h -8 -8 v 24 24 h 8 8 z"
+         id="path68346" />
+      <path
+         style="fill:#0d131d"
+         d="M 0,64 V 0 h 64 64 v 64 64 H 64 0 Z m 40,16 v -8 h 4 4 v 8 8 h 8 8 V 64 40 h -8 -8 v 8 8 h -4 -4 v -8 -8 h -8 -8 v 24 24 h 8 8 z M 104,64 V 40 H 88 72 v 24 24 h 16 16 z"
+         id="path68344" />
+    </g>
+  </g>
+</svg>
