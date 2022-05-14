@@ -37,4 +37,31 @@
 .carousel-item > a > img {
   max-height: 3rem;
   margin: 0.3rem 0;
+}
+.carousel-item > button {
+  padding: 0;
+  margin: 1ch;
+  border-radius: var(--border-radius-s);
+}
+
+.modal-dialog {
+  display: block;
+  max-width: 80vw;
+  max-height: 80vh;
+  width: auto;
+  height: auto;
+  margin: 2ch auto;
+}
+.modal-dialog img {
+  border-radius: var(--border-radius-s);
+}
+.modal-dialog .modal-content {
+  background-color: var(--bg);
+  border-radius: var(--border-radius-s);
+}
+
+.img-container {
+  border-radius: var(--border-radius-s);
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=projects.css.map */

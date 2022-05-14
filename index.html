@@ -522,10 +522,23 @@
         <div id="project-4" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image72.png" class="d-block w-100" alt="...">
-              <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image70.png" class="d-block w-100" alt="...">
-              <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image71.png" class="d-block w-100" alt="...">
-              <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image45.png" class="d-block w-100" alt="...">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#reportModal">
+                <img class="img-container" src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image72.png" class="d-block w-100" alt="Report">
+              </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#reportManagementModal">
+                <img class="img-container" src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image70.png" class="d-block w-100" alt="Report Management">
+              </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#newQuestionnaireModal">
+                <img class="img-container" src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image71.png" class="d-block w-100" alt="New Questionnaire">
+              </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#leaveApplicationModal">
+                <img class="img-container" src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image45.png" class="d-block w-100" alt="Leave Application">
+              </button>
             </div>
             <div class="carousel-item">
               <ul>
@@ -545,6 +558,78 @@
               </a>
             </div>
           </div>
+        </div>
+        <!--######################-->
+        <!-- Report MODAL Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="reportModal" tabindex="-1"
+            aria-labelledby="reportModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reportModalLabel">Manual Reporting</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image72.png" class="d-block w-100" alt="Report">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################-->
+        <!-- Report Management MODAL Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="reportManagementModal" tabindex="-1"
+            aria-labelledby="reportManagementModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="reportManagementModalLabel">Report Management</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image70.png" class="d-block w-100" alt="Report Management">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################-->
+        <!-- New Questionnaire MODAL Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="newQuestionnaireModal" tabindex="-1"
+            aria-labelledby="newQuestionnaireModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="newQuestionnaireModalLabel">Making New Questionnaire</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image71.png" class="d-block w-100" alt="New Questionnaire">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################-->
+        <!-- Leave Application MODAL Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="leaveApplicationModal" tabindex="-1"
+            aria-labelledby="leaveApplicationtModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="leaveApplicationModalLabel">Viewing Leave Application</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="https://github.com/treeDweller98/peer-support-thing/raw/master/media/image45.png" class="d-block w-100" alt="Leave Application">
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </section>
