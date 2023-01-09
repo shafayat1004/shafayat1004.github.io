@@ -88,7 +88,6 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   ul.timeline-list:before {
     left: 5%;
   }
-
   ul.timeline-list li:before {
     left: 5%;
   }
@@ -101,7 +100,6 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   ul.timeline-list li:nth-child(2n) .timeline_content {
     text-align: left;
   }
-
   #education-footer > img {
     display: none;
   }

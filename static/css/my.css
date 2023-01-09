@@ -178,18 +178,15 @@ iframe, blockquote {
     display: block;
     top: 2.3ch;
   }
-
   .navbar {
     margin: 2ch 0;
   }
-
   .nav {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
     align-content: center;
   }
-
   .nav-link {
     padding: 0 0.5rem;
     gap: 0.8rem;
@@ -199,7 +196,6 @@ iframe, blockquote {
   .navbar-brand {
     display: block;
   }
-
   .nav * {
     height: 4.5rem;
     /* width: 15ch; */
