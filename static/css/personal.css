@@ -108,8 +108,12 @@ textarea.form-control {
   overflow: auto;
 }
 
-.insta-embed > * {
+.insta-embed * {
   border-radius: var(--border-radius-s) !important;
+}
+
+#instagram-embed-0 {
+  height: 380px;
 }
 
 /* SKILLS */
