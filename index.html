@@ -346,20 +346,22 @@
         <div id="skill-slide" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <h4>Languages: </h4>
-              Python, Java, C++, SQL, LaTeX
+              <h3>Computer Languages: </h3>
+              <h5>Python (Primary), Java, C++, SQL, LaTeX</h5>
+              <h3>Human Languages: </h3>
+              <h5>Bengali (Native), English (IELTS 8.0), Can understand Hindi and Urdu.</h5>
             </div>
             <div class="carousel-item">
-              <h4>Developer Tools:</h4> 
-              VS Code
+              <h3>Developer Tools:</h3> 
+              <h5>VS Code, Linux, Git</h5>
             </div>
             <div class="carousel-item">
-              <h4>Technologies/Frameworks:</h4> 
-              Linux, Git, Django, NumPy, Pandas
+              <h3>Technologies/Frameworks:</h3> 
+              <h5>Django, NumPy/Pandas/PyTorch, OpenCV</h5>
             </div>
             <div class="carousel-item">
-              <h4>Other Softwares:</h4> 
-              Sketchup, Photoshop, Lightroom, Premiere, Blender, MS Office Suite
+              <h3>Other Softwares:</h3> 
+              <h5>Sketchup, Photoshop, Lightroom, Premiere Pro, Blender, MS Office Suite.</h5>
             </div>
           </div>
         </div>
@@ -371,6 +373,7 @@
     <section class="card contact-me">
       <div class="card-header personal contact">
         <h3>Let's get in touch!</h3>
+        Contact form not active currently
       </div>
       <hr>
       <div class="card-content">
@@ -518,8 +521,9 @@
       <hr>
       <div class="card-content">
         <ul>
-          <li>Fulltime teacher of Science, Grade 6 and 7</li>
-          <li>Fulltime teacher of Physics, Grade 8 and 9</li>
+          <li>Fulltime teacher of Physics, Grade 6 to 9</li>
+          <li>Guiding Students to a win at the National Round of British Council Your World Competition 2019</li>
+          <li>Researched and introduced new books and resources to modernize the School Curriculum</li>
         </ul>
         <div class="text-center">
           <a href="https://1drv.ms/u/s!AjkbeIACZkrag-k99kA1Wnxdp0omJQ?e=hXbuY1/" target="_blank"
@@ -581,8 +585,8 @@
       <div class="card-header">
         <h3>IOT-Based Greenhouse Hydroponics System</h3>
         <div class="btn-group">
-          <button class="btn" type="button" data-bs-target="#project-5" data-bs-slide="prev"><img src="static/images/previous.svg" alt=""></button>
-          <button class="btn" type="button" data-bs-target="#project-5" data-bs-slide="next"><img src="static/images/next.svg" alt=""></button>
+          <button class="btn" type="button" data-bs-target="#project-1" data-bs-slide="prev"><img src="static/images/previous.svg" alt=""></button>
+          <button class="btn" type="button" data-bs-target="#project-1" data-bs-slide="next"><img src="static/images/next.svg" alt=""></button>
         </div>
       </div>
       <hr>
@@ -591,6 +595,17 @@
           <div class="carousel-inner">
             <div class="carousel-item active">
               <iframe width="1054" height="593" src="https://www.youtube.com/embed/Lt4quiaEBFU" title="IOT Based Greenhouse Hydroponics System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="carousel-item">
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#blockdiagramModal">
+                <img class="img-container" src="/static/images/hydroponics_blockdiagram.png" class="d-block w-100" alt="Blockdiagram">
+              </button>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+              data-bs-target="#flowchartModal">
+                <img class="img-container" src="/static/images/hydroponics_flowchart.png" class="d-block w-100" alt="Flowchart">
+              </button>
             </div>
             <div class="carousel-item">
               <ul>
@@ -606,6 +621,42 @@
               </a>
             </div>
           </div>
+        </div>
+        <!--######################-->
+        <!-- Block Diagram Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="blockdiagramModal" tabindex="-1"
+            aria-labelledby="blockdiagramModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="blockdiagramModalLabel">Block Diagram</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/static/images/hydroponics_blockdiagram.png" class="d-block w-100" alt="Blockdiagram">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--######################-->
+        <!-- Flowchart MODAL Image-->
+        <!--######################-->
+        <div class="modal fade leave-application-modal" id="flowchartModal" tabindex="-1"
+            aria-labelledby="flowchartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="flowchartModalLabel">Flowchart</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/static/images/hydroponics_flowchart.png" class="d-block w-100" alt="Flowchart">
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </section>
@@ -719,10 +770,12 @@
             </div>
             <div class="carousel-item">
               <ul>
+                <li>Created the foundations of a mental health counselling software supported by volunteers with supervisor,
+                  admin support. Using Interviews, Questioinnaires, JAD Sessions. Making Usecase, Activity, Data Flow, Class,
+                  ERD, Sequence, etc. diagrams</li>
                 <li>A Website Where people can anonymously chat and recieve help from volunteers</li>
                 <li>Supervisors And AI makes sure no illegal or inappropriate messages are exchanged</li>
-                <li>MySQL database</li>
-                <li>Full Product Documentation Available in GitHub</li>
+                <li>A full report on the planning, analysis and design phases available on GitHub</li>
                 <li>A Group Project of System Analysis Course.</li>
               </ul>
               By
