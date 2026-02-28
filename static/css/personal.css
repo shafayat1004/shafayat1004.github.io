@@ -61,6 +61,7 @@ textarea.form-control {
   padding: 1ch;
   overflow: auto;
   align-items: center;
+  justify-content: center;
 }
 .contact-me .social img {
   height: 4.8rem;

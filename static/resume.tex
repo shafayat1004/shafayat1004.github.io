@@ -1,0 +1,126 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+% Colors
+\definecolor{googleblue}{RGB}{66,133,244}
+\definecolor{googlegray}{RGB}{95,99,104}
+
+% Format section headings
+\titleformat{\section}
+  {\normalfont\Large\bfseries\color{googleblue}}
+  {}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{12pt}{8pt}
+
+% Adjust page margins
+\geometry{margin=0.75in}
+
+% Hyperref settings
+\hypersetup{
+    colorlinks=true,
+    linkcolor=googleblue,
+    urlcolor=googleblue,
+    citecolor=googleblue
+}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE \textbf{Mir Shafayat Ahmed}} \\
+    \vspace{0.2em}
+    \textcolor{googlegray}{
+    \faMapMarker\ Dhaka, Bangladesh \quad
+    \faPhone\ +8801<REDACTED> \quad
+    \faEnvelope\ \href{mailto:shafayat1004@live.com}{shafayat1004@live.com} \\
+    \faLinkedin\ \href{https://www.linkedin.com/in/shafayat1004/}{shafayat1004} \quad
+    \faGithub\ \href{https://github.com/shafayat1004}{shafayat1004}
+    }
+\end{center}
+
+\vspace{0.3em}
+
+\section*{Professional Summary}
+Software + Infrastructure Engineer with over 3 years of diverse experience in payment systems development and integration at Chaldal PLC (Bangladesh). Advanced from intern to L3 (Mid level) through demonstrated technical aptitude and leadership in payment processing infrastructure handling 5,000+ daily transactions and 140+ different k8s deployments as a whole. Technical point of contact for PCI DSS compliance and implementation of secure payment solutions (e.g Card Vault). Seeking to leverage a modest experience in Distributed Systems, API Integrations, Secure Coding practices, DevOps, Datacenter Management, and Technical communication to contribute to the org. 
+
+- A curious generalist at heart.
+
+\section*{Technical Skills}
+\begin{tabular}{p{0.25\textwidth} p{0.7\textwidth}}
+\textbf{Languages:} & F\#, C\#, Python \\
+\textbf{Frameworks:} & .NET, Orleans (actor model), REST APIs, gRPC, Microservices architecture \\
+\textbf{Payment Systems:} & Payment gateways (Braintree, bKash, Nagad, Portpos), 3D Secure, PCI DSS compliance \\
+\textbf{Infrastructure:} & Kubernetes, Docker, SQL Server, Mikrotik, Wireguard, OpenVPN, Active Directory \\
+\textbf{Tools \& Methods:} & Version control (Git), CI/CD, Comprehensive unit testing, CheckMk, Microsoft App Insights
+\end{tabular}
+
+\section*{Professional Experience}
+
+\textbf{Chaldal PLC, Bangladesh} \hfill Feb 2023 -- Present \\
+\textit{Software Engineer (L3) - Payments + Infrastructure Team}
+\begin{itemize}[leftmargin=*]
+    \item Led gRPC integration between Payments and Grocery microservices, improving system reliability and response times
+    \item Technical POC and orchestrator for PCI DSS audit compliance, implementing and planning vault service with encryption, secret sharing, secure coding practices, and datacenter management
+    \item Core developer for ChaldalPay platform, building end-to-end transaction features including user transfers, merchant payments, and utility bill payments, wallet top-ups with basic fraud detection and prevention measures.
+    \item Implemented extensive admin activity logging throughout the ChaldalPay system.
+    \item Integrated multiple third-party APIs, (bKash, Braintree, PortPos, Nagad, EKPAY) with resilient error handling and retry mechanisms.
+    \item Enhanced payment security by adding 3D Secure authentication (Braintree), improving customer experience and reducing fraud
+    \item Established network security infrastructure: configured Mikrotik core routers and switches, SIEM, Site-to-site + employee VPNs, firewalls, and integrated with Active Directory
+    \item Mentored 2 engineers and onboarded 4 team members on actor-based frameworks, state management, payment systems and accounting
+    \item Regular On-call experiences requiring k8s log debugging, extensive code-reviews and patches, network inspection, database quorum management, etc.
+\end{itemize}
+
+\textbf{Chittagong International School, Bangladesh} \hfill Sept 2018 -- Jun 2019 \\
+\textit{Physics Teacher - Grade 6 to 9}
+\begin{itemize}[leftmargin=*]
+    \item Creating and implementing class Curriculum and Lesson Plans based on individual students’ learning capacities.
+    \item Creating an open environment for students to discuss academic and social problems.
+    \item Guiding students on their Science Projects, Drama and Class decorations.
+    \item Guiding a team of students in making a video for the British Council Your World Competition 2019 which lead to them winning the National Round.
+    \item Regularly Creating Topical Worksheets and Exam Papers for term examinations for future teachers.
+    \item Conducting After-School physics classes for the weaker students.
+\end{itemize}
+
+\section*{Key Projects}
+\begin{itemize}[leftmargin=*]
+     \item {\href{https://github.com/Shafayat1004/bgp-bangladesh}{\textbf{BGP Bangladesh} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} \hfill 2026 \\
+     A vibe coded hobby project to visualize and analyze how bangladesh is connected to the world and the gateways the internet goes through.
+    
+    \item \textbf{Card Vault} \hfill 2025 \\
+     Implemented secure vault service for PCI DSS compliance with secret-sharing mechanisms. Coordinated with auditors on network infrastructure and software architecture. Set up mTls, Tokenization, PKE, Network Segmentation. 
+     
+    \item \textbf{Microservice Architecture Enhancement} \hfill 2024 \\
+    Designed and implemented gRPC-based communication between Payments and Grocery microservices, replacing polling with efficient event-driven architecture. Implemented channel caching, request queues and resilient error handling strategies with automated alarms for failed communication attempts.
+
+    \item \textbf{Maker-Checker Refactor and Activity Log} \hfill 2024 \\
+    Refactored full codebase to support a maker checker system where a single admin cannot perform highly sensitive actions by themselves, and any action in the system is logged and presented in a queriable UI. This required extensive knowledge of the framework, frontend and backend codebase and extensive ACL configurations at the API and Web UI level.
+
+    \item \textbf{ChaldalPay Transaction System} \hfill 2023-2024 \\
+    Built core transaction engine enabling user-to-user transfers, merchant payments, and utility payments, wallet top-ups, with automated retries, error handling, ACL, creating admin panel pages to view the transactions, etc. Also included rate limiting, frequency and amount based fraud detection and approval process, and service charge modification. Backend + Frontend (Admin pannel).
+
+    \item {\href{https://github.com/shafayat1004/IOT-Based-Greenhouse-Hydroponics-System}{\textbf{IOT-Based Greenhouse Hydroponics System} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} \hfill 2022 \\
+    An Arduino + Firebase Microprocessor course project. Handled all code and electronic hardware and implemented monitoring of pH, Air Temp, Water Temp, Humidity etc and ability to update requirements to maintain a certain climate via fans, heat lamps, nutrient pump, etc.
+
+    \item {\href{https://github.com/Shafayat1004/Student-Enrollment-Analysis-System}{\textbf{Student Enrollment Analysis System} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} \hfill 2021 \\
+    A university DBMS group project (Django, MySQL) I'm proud of due to it being the first "large" project. Used Pandas and NumPy to clean up messy 100000+ line excel sheets and import them in a group-designed MySQL database schema and showed interactive charts.
+\end{itemize}
+
+\section*{Education}
+\textbf{BSc. in Computer Science} \\
+{Independent University, Bangladesh} \hfill 2024 \\
+GPA: 3.69/4.00
+
+\section*{Languages}
+Bengali (native), English (IELTS 8), Hindi (basic conversation)
+
+\section*{Additional Information}
+\begin{itemize}[leftmargin=*]
+    \item Professional strengths: Communication, Quick Learning, Technical Leadership
+    \item Technical Hobbies: Proxmox + Mikrotik + K8S homelab for digital sovereignty, experiments, and fun
+    \item Personal motto: "Give me an interesting task i don't understand, I'll understand it deeply, reach out to people for context and knowledge, and complete it!"
+\end{itemize}
+
+\end{document}
