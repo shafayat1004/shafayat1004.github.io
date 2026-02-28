@@ -18,8 +18,17 @@ let navbarBrand = document.querySelector(".navbar-brand");
 let navPills = document.querySelectorAll(".nav-link");
 
 navPills.forEach(navPill => {
-    navPill.addEventListener("click", changeNavbarBrand)
+    navPill.addEventListener("click", changeNavbarBrand);
+    navPill.addEventListener("click", collapseNavbar);
 });
+
+function collapseNavbar() {
+    // Collapse the navbar on mobile when a link is clicked
+    let navbarCollapse = document.querySelector(".navbar-collapse");
+    if (navbarCollapse.classList.contains("show")) {
+        navbarCollapse.classList.remove("show");
+    }
+}
 
 function changeNavbarBrand() {
     let activePill = document.querySelector(".nav-link.active");
