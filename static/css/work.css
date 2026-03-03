@@ -15,4 +15,31 @@
 .card.work .card-content {
   min-height: 12rem;
   /* height: 80vh; */
+}
+
+/* Resume tab: keep A4-like width instead of regular work-card width */
+#cv .card.work {
+  width: min(98vw, 11.5in);
+  max-width: none;
+  height: clamp(16rem, 84vh, calc(100vh - 6rem));
+  max-height: calc(100vh - 6rem);
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#cv .card.work .card-content {
+  min-height: 12rem;
+  flex: 1;
+  overflow: hidden;
+}
+
+#cv #cv-iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 12rem !important;
+  max-height: 100% !important;
+  border: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 8px !important;
+  background: #fff !important;
 }/*# sourceMappingURL=work.css.map */

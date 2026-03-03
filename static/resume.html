@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mir Shafayat Ahmed - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        :root {
+            --google-blue: #4285f4;
+            --google-gray: #5f6368;
+            --text-color: #202124;
+            --border-color: #dadce0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 9.1pt;
+            line-height: 1.3;
+            color: var(--text-color);
+            background: #fff;
+            max-width: 8.5in;
+            margin: 0 auto;
+            padding: 0.45in 0.55in;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            margin-bottom: 0.65em;
+        }
+
+        .name {
+            font-size: 19pt;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 0.2em;
+        }
+
+        .contact-info {
+            color: var(--google-gray);
+            font-size: 8.6pt;
+            line-height: 1.4;
+        }
+
+        .contact-info a {
+            color: var(--google-blue);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info i {
+            margin-right: 0.3em;
+            width: 1em;
+            text-align: center;
+        }
+
+        .contact-row {
+            margin: 0.2em 0;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 0.6em;
+        }
+
+        h2 {
+            color: var(--google-blue);
+            font-size: 10.5pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--google-blue);
+            padding-bottom: 0.2em;
+            margin-bottom: 0.35em;
+            margin-top: 0;
+        }
+
+        /* Summary */
+        .summary {
+            text-align: justify;
+        }
+
+        .summary-note {
+            margin-top: 0.3em;
+            color: var(--google-gray);
+        }
+
+        /* Skills Table */
+        .skills-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .skills-table td {
+            padding: 0.2em 0;
+            vertical-align: top;
+        }
+
+        .skills-table td:first-child {
+            width: 25%;
+            font-weight: 600;
+        }
+
+        .skills-table td:last-child {
+            width: 75%;
+        }
+
+        /* Experience */
+        .job {
+            margin-bottom: 0.5em;
+        }
+
+        .job:last-child {
+            margin-bottom: 0;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .company {
+            font-weight: 700;
+            font-size: 10.5pt;
+        }
+
+        .date {
+            color: var(--google-gray);
+            font-size: 9pt;
+        }
+
+        .job-title {
+            font-style: italic;
+            color: var(--google-gray);
+            font-size: 9.1pt;
+            margin-bottom: 0.2em;
+        }
+
+        ul {
+            margin-left: 1.2em;
+            margin-top: 0.1em;
+        }
+
+        li {
+            margin-bottom: 0.1em;
+            text-align: justify;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 0.4em;
+        }
+
+        .project:last-child {
+            margin-bottom: 0;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .project-name {
+            font-weight: 700;
+        }
+
+        .project-name a {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        .project-name a:hover {
+            color: var(--google-blue);
+        }
+
+        .project-name i {
+            font-size: 0.8em;
+            margin-left: 0.3em;
+            color: var(--google-blue);
+        }
+
+        .project-date {
+            color: var(--google-gray);
+            font-size: 9pt;
+        }
+
+        .project p {
+            text-align: justify;
+            margin-top: 0.15em;
+        }
+
+        /* Education */
+        .degree {
+            font-weight: 700;
+        }
+
+        .school-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .school {
+            color: var(--google-gray);
+        }
+
+        .gpa {
+            color: var(--google-gray);
+            font-size: 9.5pt;
+        }
+
+        /* Languages */
+        .languages {
+            color: var(--text-color);
+        }
+
+        /* Print Styles */
+        @media print {
+            body {
+                padding: 0.35in 0.45in;
+                max-width: none;
+                font-size: 8.7pt;
+                line-height: 1.25;
+            }
+
+            section {
+                margin-bottom: 0.5em;
+            }
+
+            h2 {
+                font-size: 9.5pt;
+                margin-bottom: 0.25em;
+            }
+
+            .header {
+                margin-bottom: 0.5em;
+            }
+
+            .name {
+                font-size: 17pt;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--text-color);
+            }
+
+            a[href]:after {
+                content: "";
+            }
+
+            .contact-info a[href]:after {
+                content: "";
+            }
+
+            li {
+                margin-bottom: 0.08em;
+            }
+        }
+
+        /* Mobile */
+        @media screen and (max-width: 600px) {
+            body {
+                padding: 0.8em;
+                font-size: 9pt;
+            }
+
+            .job-header,
+            .project-header,
+            .school-info {
+                flex-direction: column;
+            }
+
+            .date,
+            .project-date {
+                margin-top: 0.2em;
+            }
+
+            .skills-table td:first-child {
+                width: 35%;
+            }
+
+            .name {
+                font-size: 16pt;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="name">Mir Shafayat Ahmed</div>
+        <div class="contact-info">
+            <div class="contact-row">
+                <i class="fas fa-map-marker-alt"></i>Dhaka, Bangladesh &nbsp;&nbsp;
+                <i class="fas fa-phone"></i><a href="tel:+88017REDACTED" target="_blank" rel="noopener noreferrer">+88017REDACTED</a> &nbsp;&nbsp;
+                <i class="fas fa-envelope"></i><a href="mailto:shafayat1004@live.com" target="_blank" rel="noopener noreferrer">shafayat1004@live.com</a>
+            </div>
+            <div class="contact-row">
+                <i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/shafayat1004/" target="_blank" rel="noopener noreferrer">shafayat1004</a> &nbsp;&nbsp;
+                <i class="fab fa-github"></i><a href="https://github.com/shafayat1004" target="_blank" rel="noopener noreferrer">shafayat1004</a>
+            </div>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Software + Infrastructure Engineer with 3+ years in payment systems at Chaldal PLC. Advanced from intern to L3, leading payment infrastructure, handling 5,000+ daily transactions, and managing 140+ Kubernetes deployments across 4 physical datacenters in Bangladesh and Singapore. Technical lead for PCI DSS compliance and secure payment solutions. Experienced in distributed systems, microservices (gRPC, Orleans), secure coding, and network infrastructure. A curious generalist at heart — give me an interesting problem I don't understand, and I'll dig deep until I solve it.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <table class="skills-table">
+            <tr>
+                <td>Languages:</td>
+                <td>F#, C#, Python</td>
+            </tr>
+            <tr>
+                <td>Frameworks:</td>
+                <td>.NET, Orleans (actor model), REST APIs, gRPC, Microservices architecture</td>
+            </tr>
+            <tr>
+                <td>Payment Systems:</td>
+                <td>Payment gateways (Braintree, bKash, Nagad, Portpos), 3D Secure, PCI DSS compliance</td>
+            </tr>
+            <tr>
+                <td>Infrastructure:</td>
+                <td>Kubernetes, Docker, SQL Server, Mikrotik, Wireguard, OpenVPN, Active Directory</td>
+            </tr>
+            <tr>
+                <td>Tools & Methods:</td>
+                <td>Git, Ansible, Azure DevOps CI/CD, Helm, CheckMk, Microsoft App Insights</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="company">Chaldal PLC, Bangladesh</span>
+                <span class="date">Feb 2023 — Present</span>
+            </div>
+            <div class="job-title">Software Engineer (L3) - Payments + Infrastructure Team</div>
+            <ul>
+                <li>Led gRPC integration between Payments and Grocery microservices, replacing polling with event-driven architecture and improving response times</li>
+                <li>Led PCI DSS compliance to completion and architected the Card Vault service with secret sharing, mTLS, tokenization, PKE, network segmentation, and data center coordination</li>
+                <li>Core developer for ChaldalPay platform: built transaction engine for transfers, merchant payments, utility bills, and wallet top-ups with fraud detection</li>
+                <li>Implemented maker-checker authorization and comprehensive activity logging across the ChaldalPay system</li>
+                <li>Integrated 5+ payment gateways (bKash, Braintree with 3D Secure, PortPos, Nagad, EKPAY) with resilient error handling and retry mechanisms</li>
+                <li>Built network security infrastructure: Mikrotik core routers, SIEM, site-to-site and employee VPNs, firewalls, and Active Directory integration</li>
+                <li>Owned on-call incident response across Kubernetes log debugging, network inspection, and database quorum management</li>
+                <li>Mentored 2 engineers and onboarded 4 team members on actor-based frameworks and payment systems</li>
+            </ul>
+        </div>
+
+        <div class="job">
+            <div class="job-header">
+                <span class="company">Chittagong International School, Bangladesh</span>
+                <span class="date">Sept 2018 — Jun 2019</span>
+            </div>
+            <div class="job-title">Physics Teacher - Grade 6 to 9</div>
+            <ul>
+                <li>Taught Physics grades 6-9; guided a student team to create a video that won the British Council Your World Competition 2019 national round</li>
+                <li>Developed differentiated curriculum and after-school programs for students at varying learning levels</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Personal Projects</h2>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-name">
+                    <a href="https://github.com/Shafayat1004/bgp-bangladesh" target="_blank" rel="noopener noreferrer">BGP Bangladesh <i class="fas fa-external-link-alt"></i></a>
+                </span>
+                <span class="project-date">2026</span>
+            </div>
+            <p>Personal exploration and community education project visualizing how Bangladesh connects to the global internet based on publicly available BGP data — mapping BGP routes, peering relationships, and gateway paths. Because understanding infrastructure shouldn't require reading RFCs.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-name">
+                    <a href="https://www.linkedin.com/posts/shafayat1004_this-january-i-had-the-privilege-of-being-activity-7425896349579112448-I5ml?utm_source=share&utm_medium=member_desktop&rcm=ACoAABcMFFoBFtz72UBrhuxfmkKeWEy5pQ-8BYY" target="_blank" rel="noopener noreferrer">Dorbar Dekchi Tracker <i class="fas fa-external-link-alt"></i></a>
+                </span>
+                <span class="project-date">2026</span>
+            </div>
+            <p>Freelance work for a traditional institution. Logistics platform built in 15 days — tracked 800 reusable food pots across multiple fast-paced and chaotic distribution cycles, ultimately feeding ~450,000 people. React PWA with Firebase real-time dashboards shown on Google TV displays, GCP storage for delivery receipts, and volunteer-facing web forms to update container status and delivery routes.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-name">
+                    <a href="https://github.com/shafayat1004/IOT-Based-Greenhouse-Hydroponics-System" target="_blank" rel="noopener noreferrer">IoT Greenhouse Hydroponics <i class="fas fa-external-link-alt"></i></a>
+                </span>
+                <span class="project-date">2022</span>
+            </div>
+            <p>End-to-end embedded systems project — built all electronics, wrote all firmware, and deployed Firebase backend for real-time monitoring and control of pH, temperature, humidity, and nutrient delivery.</p>
+        </div>
+
+        <div class="project">
+            <div class="project-header">
+                <span class="project-name">
+                    <a href="https://github.com/Shafayat1004/Student-Enrollment-Analysis-System" target="_blank" rel="noopener noreferrer">Student Enrollment Analysis <i class="fas fa-external-link-alt"></i></a>
+                </span>
+                <span class="project-date">2021</span>
+            </div>
+            <p>First "real" team project — still proud of it. Used Pandas/NumPy to clean messy 100K+ line Excel sheets and built a Django/MySQL analytics platform with interactive visualizations.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="degree">BSc. in Computer Science</div>
+        <div class="school-info">
+            <span class="school">Independent University, Bangladesh</span>
+            <span class="gpa">GPA: 3.69/4.00 &nbsp;&nbsp; 2024</span>
+        </div>
+    </section>
+
+    <section>
+        <h2>Languages</h2>
+        <p class="languages">Bengali (native), English (IELTS 8), Hindi (basic conversation)</p>
+    </section>
+
+    <section>
+        <h2>Interests</h2>
+        <p>Homelab enthusiast: Proxmox + Kubernetes + MikroTik setup for experiments, digital sovereignty, and fun.</p>
+    </section>
+
+
+</body>
+</html>

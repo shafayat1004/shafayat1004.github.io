@@ -46,8 +46,49 @@ function changeNavbarBrand() {
         case "projects-tab":
             navbarBrand.innerHTML = ("Projects")
             break;
+        case "cv-tab":
+            navbarBrand.innerHTML = ("Resume")
+            break;
         default:
             navbarBrand.innerHTML = ("Mir Shafayat Ahmed")
             break;
     }
+}
+
+function printResumeFromIframe() {
+    const frame = document.getElementById("cv-iframe");
+    if (frame && frame.contentWindow && frame.contentDocument) {
+        const doPrint = () => {
+            frame.contentWindow.focus();
+            frame.contentWindow.print();
+        };
+
+        if (frame.contentDocument.readyState === "complete") {
+            doPrint();
+        } else {
+            frame.addEventListener("load", doPrint, { once: true });
+        }
+        return;
+    }
+    window.alert("Resume is still loading. Please try again.");
+}
+
+function downloadResumePdf() {
+    const link = document.createElement("a");
+    link.href = "static/resume.pdf";
+    link.download = "Mir_Shafayat_Ahmed_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+}
+
+const cvPrintBtn = document.getElementById("cv-print-btn");
+const cvDownloadBtn = document.getElementById("cv-download-btn");
+
+if (cvPrintBtn) {
+    cvPrintBtn.addEventListener("click", printResumeFromIframe);
+}
+
+if (cvDownloadBtn) {
+    cvDownloadBtn.addEventListener("click", downloadResumePdf);
 }

@@ -60,11 +60,10 @@
             </button>
           </li>
           <li class="nav-item" role="presentation">
-            <a href="static/resume.pdf" target="_blank">
-              <button class="nav-link" id="cv-download" data-bs-toggle="tab" data-bs-target="#" type="button" role="tab" aria-controls="cv" aria-selected="false" style="display:flex; justify-content:center">
-                <img src="static/images/cv.png" alt="cv">
-              </button>
-            </a>
+            <button class="nav-link" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv" type="button" role="tab" aria-controls="cv" aria-selected="false">
+              <img src="static/images/cv.png" alt="cv">
+              Resume
+            </button>
           </li>
           <li class="nav-item" role="presentation">
             <a href="https://shafayat1004.github.io/My-Notes/" target="_blank">
@@ -852,6 +851,35 @@
       </div>
     </section>
 
+  </div>
+
+  <!--
+  #####################################################
+  #################  RESUME TAB #######################
+  #####################################################
+  -->
+  <div class="tab-pane" id="cv" role="tabpanel" aria-labelledby="cv-tab">
+    <section class="card work">
+      <div class="card-header work">
+        <div>
+          <h3>Resume</h3>
+          <h6>View, print, or save as PDF</h6>
+        </div>
+        <div class="btn-group" role="group" aria-label="Resume actions">
+          <button class="btn btn-outline-primary" type="button" id="cv-print-btn">Print</button>
+          <button class="btn btn-outline-primary" type="button" id="cv-download-btn">Download PDF</button>
+        </div>
+      </div>
+      <hr>
+      <div class="card-content">
+        <iframe
+          id="cv-iframe"
+          src="static/resume.html"
+          title="Mir Shafayat Ahmed Resume"
+          style="width:100%; min-height:85vh; border:1px solid rgba(0,0,0,0.12); border-radius:8px; background:#fff;"
+        ></iframe>
+      </div>
+    </section>
   </div>
 
 </div>
