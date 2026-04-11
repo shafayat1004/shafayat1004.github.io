@@ -92,3 +92,24 @@ if (cvPrintBtn) {
 if (cvDownloadBtn) {
     cvDownloadBtn.addEventListener("click", downloadResumePdf);
 }
+
+// Dark mode toggle
+const darkToggle = document.getElementById("dark-mode-toggle");
+const html = document.documentElement;
+
+function applyTheme(theme) {
+    html.setAttribute("data-theme", theme);
+    darkToggle.innerHTML = theme === "dark" ? "&#9788;" : "&#9790;";
+    darkToggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
+}
+
+const saved = localStorage.getItem("theme");
+if (saved) {
+    applyTheme(saved);
+}
+
+darkToggle.addEventListener("click", () => {
+    const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    applyTheme(next);
+    localStorage.setItem("theme", next);
+});
