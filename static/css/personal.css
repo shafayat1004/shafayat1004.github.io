@@ -12,9 +12,8 @@
 } */
 .card-header.personal h3 {
   font-weight: 900;
-  /* text-shadow: var(--shadows-shorter); */
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(92, 107, 79, 0.5);
+  -webkit-text-stroke-color: var(--card-border-color);
 }
 
 .contact-form {

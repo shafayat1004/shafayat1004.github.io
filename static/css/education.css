@@ -65,7 +65,7 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
 }
 
 .timeline_content {
-  border: var(--border-width) solid var(--nav-bg);
+  border: var(--border-width) solid var(--card-border-color);
   box-shadow: var(--shadows), var(--shadows-inner-l);
   border-radius: var(--border-radius-s);
   background-color: var(--card-bg-5);
@@ -74,7 +74,7 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   font-weight: 600;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--card-border-color);
 }
 .timeline_content span {
   font-weight: 500;

@@ -6,8 +6,8 @@
 .card.blog a {
   text-decoration: none;
   box-shadow: var(--shadows-shorter);
-  color: #2d2d2d;
-  background-color: #d9c9a8;
+  color: var(--font-color-default);
+  background-color: var(--card-bg-5);
   padding: 1ch;
   margin: 1ch;
   border-radius: var(--border-radius-s);
