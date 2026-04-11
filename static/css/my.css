@@ -521,6 +521,12 @@ body, .navbar, .card, .nav-link, #myTabs > .nav-item, .timeline_content {
   filter: invert(0.85);
 }
 
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .navbar-brand:hover,
+[data-theme="dark"] .navbar-brand:focus {
+  color: var(--nav-link-color);
+}
+
 [data-theme="dark"] .card.project {
   color: var(--font-color-default);
 }
