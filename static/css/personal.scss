@@ -9,12 +9,12 @@
     text-transform: capitalize;
     border-radius: var(--border-radius-s);
 } */
-.card-header.personal{
-    h3{
+.card-header.personal {
+    h3 {
         font-weight: 900;
         /* text-shadow: var(--shadows-shorter); */
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: rgba(0, 80, 201, 0.699)
+        -webkit-text-stroke-color: rgba(92, 107, 79, 0.5);
     }
 }
 .contact-form{
@@ -32,7 +32,7 @@ textarea.form-control{
 }
 .input-group-text{
     height: 100%;
-    background-color: rgba(224, 135, 132, 0.808);
+    background-color: rgba(196, 114, 78, 0.7);
     border-radius: 0;
     border-top-left-radius: var(--border-radius-s);
     border-bottom-left-radius: var(--border-radius-s);
@@ -129,8 +129,8 @@ textarea.form-control{
 
 /* SKILLS */
 
-.card.skills{
-    background-color: var(--card-bg-4);
+.card.skills {
+    background-color: rgba(210, 195, 165, 0.9);
     width: 30rem;
     min-width: 20rem;
     /* height: 25rem; */

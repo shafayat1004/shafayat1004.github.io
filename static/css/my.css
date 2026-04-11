@@ -1,28 +1,28 @@
 :root {
-  --bg: rgb(219, 255, 248);
-  --nav-bg: hsl(207, 28%, 70%);
-  --bg-darker: #3a5a55b0;
-  --nav-btn: rgba(244, 230, 255, 0.911);
-  --nav-btn-hover: rgb(243, 238, 255);
-  --border-radius-l:25px;
-  --border-radius-s:10px;
-  --bg-lighter: rgb(135, 207, 177);
-  --timeline-bg: rgba(197, 255, 130, 0);
-  --shadows: 20px 20px 30px;
-  --shadows-shorter: 7px 7px 10px;
-  --border-width: 0.3rem;
-  --marker-color: #ff8080;
-  --card-alpha: 0.75;
-  --card-bg: rgba(255, 241, 196, var(--card-alpha));
-  --card-bg-2: rgba(226, 253, 195, var(--card-alpha));
-  --card-bg-3: rgba(250, 134, 119, var(--card-alpha));
-  --card-bg-4: rgba(173, 252, 255, var(--card-alpha));
-  --card-bg-5: rgba(250, 255, 173, 0.75);
-  --textarea-color: rgba(255, 234, 220, 0.87);
-  --shadows-inner-l: 1px 1px 10px inset var(--bg-darker), -1px -1px 10px inset var(--bg-darker);
+  --bg: #f5f0e8;
+  --nav-bg: #5c6b4f;
+  --bg-darker: #3d4a35;
+  --nav-btn: rgba(245, 240, 232, 0.92);
+  --nav-btn-hover: #e8e0d0;
+  --border-radius-l: 12px;
+  --border-radius-s: 8px;
+  --bg-lighter: #8a9a6e;
+  --timeline-bg: rgba(92, 107, 79, 0.1);
+  --shadows: 8px 8px 20px;
+  --shadows-shorter: 4px 4px 10px;
+  --border-width: 0.15rem;
+  --marker-color: #c4724e;
+  --card-alpha: 0.92;
+  --card-bg: rgba(245, 238, 220, var(--card-alpha));
+  --card-bg-2: rgba(225, 235, 210, 0.9);
+  --card-bg-3: rgba(230, 195, 170, 0.88);
+  --card-bg-4: rgba(210, 195, 165, 0.9);
+  --card-bg-5: rgba(242, 235, 218, 0.88);
+  --textarea-color: rgba(245, 238, 220, 0.9);
+  --shadows-inner-l: 1px 1px 8px inset var(--bg-darker), -1px -1px 8px inset var(--bg-darker);
   --shadows-inner-s: 1px 1px 3px inset var(--bg-darker), -1px -1px 3px inset var(--bg-darker);
-  --font-color-default: #333;
-  --minty-glass: rgba(198, 229, 219, var(--card-alpha));
+  --font-color-default: #2a2622;
+  --minty-glass: rgba(185, 200, 160, 0.88);
 }
 
 #myVideo {
@@ -156,7 +156,7 @@ iframe, blockquote {
 }
 
 .nav-pills .nav-link.active {
-  color: rgb(41, 65, 44);
+  color: rgb(58, 65, 42);
   background-color: var(--bg);
   box-shadow: 5px 5px 8px var(--bg-darker);
 }

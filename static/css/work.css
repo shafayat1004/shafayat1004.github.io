@@ -6,8 +6,8 @@
 .card.work a {
   text-decoration: none;
   box-shadow: var(--shadows-shorter);
-  color: black;
-  background-color: rgb(241, 250, 215);
+  color: #2d2d2d;
+  background-color: #d9c9a8;
   padding: 1ch;
   margin: 1ch;
   border-radius: var(--border-radius-s);
