@@ -34,6 +34,11 @@
     z-index: -1;
 }
 
+html {
+    overflow-y: scroll;
+    scrollbar-gutter: stable;
+}
+
 body{
     font-family: poppins, Georgia, 'Times New Roman', Times, serif;
     background-color: var(--bg);
@@ -156,7 +161,7 @@ iframe, blockquote {
 }
 .nav-link{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
     align-items: center;
     grid-auto-rows: 1fr;
     padding: 0 0.9rem;
@@ -164,6 +169,7 @@ iframe, blockquote {
     width: 100%;
     font-weight: 800;
     color: black;
+    text-align: right;
 }
 @media (max-width: 760px) {
     .navbar-brand{
