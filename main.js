@@ -99,7 +99,8 @@ const html = document.documentElement;
 
 function applyTheme(theme) {
     html.setAttribute("data-theme", theme);
-    darkToggle.innerHTML = theme === "dark" ? "&#9788;" : "&#9790;";
+    const icon = document.getElementById("toggle-icon");
+    if (icon) icon.textContent = theme === "dark" ? "☀️" : "🌙";
     darkToggle.title = theme === "dark" ? "Switch to light mode" : "Switch to dark mode";
 }
 
