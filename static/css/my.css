@@ -24,9 +24,9 @@
   --font-color-default: #2a2622;
   --minty-glass: rgba(175, 195, 145, 0.9);
   --video-filter: none;
-  --nav-link-color: black;
-  --nav-border-color: black;
-  --nav-active-color: rgb(58, 65, 42);
+  --nav-link-color: #3a3428;
+  --nav-border-color: #3a3428;
+  --nav-active-color: #4a5638;
   --card-border-color: var(--nav-bg);
   --scrollbar-track: var(--bg-darker);
   --scrollbar-thumb: var(--bg-lighter);
@@ -52,12 +52,12 @@
   --textarea-color: rgba(30, 25, 18, 0.92);
   --shadows-inner-l: 1px 1px 6px inset rgba(220, 170, 80, 0.08), -1px -1px 6px inset rgba(80, 190, 210, 0.06);
   --shadows-inner-s: 1px 1px 3px inset rgba(220, 170, 80, 0.06), -1px -1px 3px inset rgba(80, 190, 210, 0.04);
-  --font-color-default: #e8dcc8;
+  --font-color-default: #d8ccb4;
   --minty-glass: rgba(15, 35, 40, 0.9);
   --video-filter: brightness(0.3) saturate(0.7) hue-rotate(10deg);
-  --nav-link-color: #e0d4be;
+  --nav-link-color: #cfc3a8;
   --nav-border-color: rgba(80, 180, 200, 0.2);
-  --nav-active-color: #f0c878;
+  --nav-active-color: #e0c878;
   --card-border-color: rgba(220, 170, 80, 0.18);
   --scrollbar-track: #0a0e12;
   --scrollbar-thumb: #1e3540;
@@ -84,6 +84,7 @@ html {
 body {
   font-family: poppins, Georgia, "Times New Roman", Times, serif;
   background-color: var(--bg);
+  color: var(--font-color-default);
   margin-bottom: 10ch;
   cursor: url("../images/cursor.png"), default;
   background-attachment: fixed;
