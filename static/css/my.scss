@@ -252,6 +252,45 @@ iframe, blockquote {
     min-width: 10ch;
     max-width: 60ch;
     padding: 2ch;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    h3 {
+        font-size: 1.35rem;
+        font-weight: 700;
+        margin-bottom: 0.3em;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.3em;
+    }
+
+    h5 {
+        font-size: 1.05rem;
+        font-weight: 500;
+        margin-bottom: 0.2em;
+    }
+
+    h6 {
+        font-size: 0.95rem;
+        font-weight: 500;
+        margin-bottom: 0.2em;
+    }
+
+    p, li {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+.timeline_content h4 {
+    font-size: 1.2rem;
+}
+
+.timeline_content span {
+    font-size: 0.95rem;
 }
 
 
