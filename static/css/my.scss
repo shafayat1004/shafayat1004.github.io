@@ -54,7 +54,7 @@
     --shadows-inner-s: 1px 1px 3px inset rgba(220, 170, 80, 0.06), -1px -1px 3px inset rgba(80, 190, 210, 0.04);
     --font-color-default: #d8ccb4;
     --minty-glass: rgba(15, 35, 40, 0.9);
-    --video-filter: brightness(0.3) saturate(0.7) hue-rotate(10deg);
+    --video-filter: brightness(0.45) saturate(0.8) hue-rotate(10deg);
     --nav-link-color: #cfc3a8;
     --nav-border-color: rgba(80, 180, 200, 0.2);
     --nav-active-color: #e0c878;
@@ -395,6 +395,9 @@ body, .navbar, .card, .nav-link, #myTabs > .nav-item, .timeline_content {
         width: 2.6rem;
         height: 2.6rem;
         font-size: 1.2rem;
+    }
+    [data-theme="dark"] #myVideo {
+        filter: brightness(0.55) saturate(0.8) hue-rotate(10deg);
     }
 }
 
