@@ -367,6 +367,27 @@ body, .navbar, .card, .nav-link, #myTabs > .nav-item, .timeline_content {
     }
 }
 
+/* Dark mode navbar glow */
+[data-theme="dark"] .navbar {
+    box-shadow:
+        0 4px 20px rgba(80, 180, 200, 0.15),
+        0 8px 40px rgba(60, 150, 180, 0.1),
+        0 2px 60px rgba(100, 200, 220, 0.06),
+        var(--shadows-inner-s);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 5%;
+        right: 5%;
+        bottom: -20px;
+        height: 20px;
+        background: radial-gradient(ellipse at center, rgba(80, 180, 200, 0.12) 0%, transparent 70%);
+        pointer-events: none;
+        border-radius: 0 0 50% 50%;
+    }
+}
+
 /* Dark mode contrast fixes */
 [data-theme="dark"] {
     .carousel-control-prev-icon,
