@@ -12,7 +12,7 @@
 } */
 .card-header.personal h3 {
   font-weight: 900;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.3px;
   -webkit-text-stroke-color: var(--card-border-color);
 }
 

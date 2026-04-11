@@ -528,6 +528,10 @@ body, .navbar, .card, .nav-link, #myTabs > .nav-item, .timeline_content {
   color: var(--nav-link-color);
 }
 
+[data-theme="dark"] .card-header.personal h3 {
+  -webkit-text-stroke-width: 0;
+}
+
 [data-theme="dark"] .card.project {
   color: var(--font-color-default);
 }
